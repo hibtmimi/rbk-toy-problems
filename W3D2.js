@@ -46,14 +46,11 @@ var output = flipPairs(input);
 console.log(output); // --> hcce kuo toh wnietertsni ghtsip orlbmei
 ,si 't sniasenyli tnreseitgn!*/
 
-
-function flipPairs(string){
-	var string1 = "" ;
-		for(var i=0;i<string.length;i+=2){
-
-string1+=string[i+1]+string[i]
-
-	}
-  return string1
+ function flipPairs(str) {
+  str2 = "";
+ for(var i = str.length - 1 ; i >= 0 ; i--){
+str2 = str2 + str[i]
+ }
+ return str2
 }
-	console.log(flipPairs("hello")) 
+flipPairs("hello")

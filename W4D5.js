@@ -19,3 +19,13 @@ Would return:
 
 */
 
+function getPeopleBornIn (staff , month){
+	newStaff = []
+	for(var i = 0 ; i < staff.lenght ; i++){
+	if(staff[i].month === month){
+		newStaff.push(staff[i])
+	}
+}
+return newStaff
+}
+getPeopleBornIn(staff, 'August')

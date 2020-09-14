@@ -8,6 +8,48 @@
 // 	-write a function called displayFriend that takes a mate as an argument and returns the important information in a readable way.
 // 	-write a function called addFriend that takes a mate as an argument and add it to you classMates arraya.
 // 	-calculate the number of male friends that your class have by writing a function called nbOfMale.
+function makeClassmates(name , age , place , gender){
+	return { 
+	    name : name ,
+	    age : age ,
+	    place : place ,
+	    gender : gender
+    }
+}
+
+makeClassmates(classmate1)
+
+var classMates= [classmate1 , classmate2]
+
+ function displayFriend(obj){
+ 	var gen = " she's"
+ 	if(obj.gender === "male") 
+ 		gen = "he's"
+ 	return ("my classMates is" + obj.name + gen + obj.age )
+ }
+
+function addFriend(obj) {
+    classMates.push(obj)
+    return "New friend added"
+}
+
+function nbOfMale(obj) {
+    var count = 0
+    if(key['gender'] === "male")
+            count++
+    }
+    return "I have " + count + " male friendS"
+}
+
+
+
+
+
+
+
+
+
+
 
 
 //Part2:
